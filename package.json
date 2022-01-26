@@ -1,0 +1,53 @@
+{
+  "main": "public/electron.js",
+  "name": "babylon-react-electron-app",
+  "author": "Todor Imreorov",
+  "description": "Boilerplate example app",
+  "version": "0.2.0",
+  "homepage": "./",
+  "private": true,
+  "dependencies": {
+    "@babylonjs/core": "^4.2.1",
+    "@babylonjs/gui": "^4.2.1",
+    "babylonjs": "^4.2.1",
+    "electron-is": "^3.0.0",
+    "react": "^17.0.2",
+    "react-babylonjs": "^3.0.31",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0"
+  },
+  "devDependencies": {
+    "electron": "^16.0.7",
+    "electron-builder": "^22.14.5",
+    "typescript": "^4.5.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron-static": "npm run build-web && electron build/electron.js",
+    "build-web": "react-scripts build",
+    "build": "npm run build-web && build --win",
+    "build-portable": "npm run build-web && build --win portable",
+    "electron": "electron public/electron.js"
+  },
+  "build": {
+    "asar": true,
+    "appId": "com.electron.babylon",
+    "copyright": "MIT",
+    "productName": "babylon-react-electron-app",
+    "win": {
+      "icon": "public/icon.png",
+      "publisherName": "Todor Imreorov"
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
