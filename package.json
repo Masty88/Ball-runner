@@ -9,7 +9,10 @@
   "dependencies": {
     "@babylonjs/core": "^4.2.1",
     "@babylonjs/gui": "^4.2.1",
+    "@babylonjs/procedural-textures": "^4.2.1",
     "babylonjs": "^4.2.1",
+    "babylonjs-hook": "^0.1.0",
+    "cannon": "^0.6.2",
     "electron-is": "^3.0.0",
     "react": "^17.0.2",
     "react-babylonjs": "^3.0.31",
