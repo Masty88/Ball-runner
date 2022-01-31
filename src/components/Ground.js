@@ -32,6 +32,7 @@ const Ground = () => {
                    position={new Vector3(0,0,0)}
                    rotation-x={Math.PI/2}
                    receiveShadows={true}
+                   checkCollisions={true}
                    >
                 <physicsImpostor type={PhysicsImpostor.BoxImpostor} _options={{
                                         mass: 0,
